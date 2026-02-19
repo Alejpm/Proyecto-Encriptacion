@@ -1,0 +1,115 @@
+:root {
+    --primary: #0f4c81;
+    --secondary: #1c7ed6;
+    --bg: #f4f8fb;
+    --card: #ffffff;
+    --border: #d9e2ec;
+    --text: #102a43;
+    --muted: #627d98;
+    --success: #2f9e44;
+    --danger: #c92a2a;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #eef4f9, #dce7f3);
+    color: var(--text);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(15, 76, 129, 0.08);
+    border: 1px solid var(--border);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(28, 126, 214, 0.15);
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: var(--secondary);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th {
+    background: var(--primary);
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.table td {
+    border: 1px solid var(--border);
+    padding: 8px;
+    font-size: 13px;
+}
+
+pre {
+    background: #0b2239;
+    color: #a9d6ff;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.badge {
+    background: var(--secondary);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
